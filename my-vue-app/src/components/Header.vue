@@ -1,11 +1,17 @@
 <template> 
 <header> 
-<h1>Мій перший Vue-додаток!</h1> 
+<h1>{{title}}</h1> 
 </header> 
 </template>
 <script> 
 export default { 
-name: "HeaderComponent" 
+name:"HeaderComponent" ,
+ props:{
+  title:{
+    type:String,
+    required: true,
+  }
+ }
 }; 
 </script>
 <style scoped> 
