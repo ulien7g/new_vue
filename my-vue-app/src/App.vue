@@ -1,13 +1,16 @@
 <template>
 <HeaderComponent title="title"/>
+<MessageComponent title="Привіт, Vue!" message="Я вмію створювати компоненти із пропсами"/>
 </template>
 
 <script>
 import HeaderComponent from "./components/Header.vue";
+import MessageComponent from "./components/MessageComponent.vue"
 
 export default {
   components: {
-    HeaderComponent
+    HeaderComponent,
+    MessageComponent
   }
 }
 </script>
